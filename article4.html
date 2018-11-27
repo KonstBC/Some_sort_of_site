@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" type="text/css"/>
+    <meta charset="utf-8" />
+    <title>KOSTPedia - Главная</title>
+</head>
+<body>
+    <header style="color:darkgreen">
+        <h1 align="center">
+            KOSTPedia
+        </h1>  
+            <p class="first">
+                   <b>
+                       Статья четвёртая - "SVG графика"
+                    </b>
+            </p>
+    </header>
+    <article style="color:darkgreen">
+        <section >
+            <p><ul >
+                <li><a href="article1.html">
+                    Статья первая - "Воспроизведение аудио/видео фрагмента"
+                </a>
+                </li>
+                   <li>
+                       <a href="article2.html">
+                           Статья вторая - "Заполнение и работа с формами"
+                       </a>
+                   </li>
+                   <li>
+                       <a href="article3.html">
+                           Статья третья - "Таблица, шкала прогресса"
+                       </a>
+                   </li>
+                   <li>
+                       <a href="article4.html">
+                           Статья четвёртая - "SVG графика"
+                       </a>
+                   </li>
+                </ul>
+            </p>
+        </section>
+    </article>
+    <nav> <ul>
+         <li><a href="home.html"><span style="color:darkblue"><i>Главная</i></span> </a></li>
+        <li><a href="about.html"><span style="color:darkblue"><i>О сайте</i> </span> </a></li>
+        </ul>
+    </nav>
+	<p></p>
+    <nav class="second">
+        <strong>SVG</strong> - Scalable Vector Graphics, или масштабируемая векторня грфика, язык разметки в стиле <strong>HTML</strong> для рисования фигур. Круги, квадраты, прямоугольники, ломанные линии, треугольники,... всё что хотите! <strong>SVG</strong> изображения создаются внутри кода как image.svg. Фигуры создаются просто: 1) тег <strong>svg.../svg></strong> 2) задаёте высоту (height), ширину (width) в пикселях 3) тегом <strong>rect.../rect</strong> мы можем создать либо квадрат, либо прямоугольник 4) в этом теге опять указываете высоту, ширину и координаты (x=""/y=""). Круг ресуется с помощью тега <strong>circle.../circle</strong>, используя атрибуты <strong>cx=""/cy=""/r=""</strong> мы задём ему координаты середины и радиус.  <br /><span style="color:darkblue">Пример:</span><br />
+   <svg widht="40" height="40">
+       <circle cx="20" cy="20" r="20" fill="black">
+       </circle>
+   </svg><br />
+        Строки создаются тегом <strong>line.../line</strong> внутри которого в задаёте координаты начала (x1,y1), конца (x2,y2), стиль (<strong>style="stroke:цвет;stroke-linecap:round-круг;stroke-width:толщина"</strong>). Пример строки вы видете по названием страницы.
+    А теперь к вкусному, к анимации!!!<br />
+        
+            <svg width="1000" height="100">
+                <rect width="70" height="70" x="0" y="0" fill="red">
+                    <animate attributeName="x" from="0" to="1000" dur="3s" fill="remove" repeatCount="indefinite">
+                    </animate>
+                </rect>
+            </svg><br />
+        И так, что я сделал? Внутрь тега <strong>svg</strong> я помистил тег <strong>animate.../animate</strong>, используя атрибуты <strong>from/to</strong> (точка начала/точка конца), <strong>dur="сек"</strong>, <strong>fill="freeze/remove"</strong> (конечное состояние, либо останется в таком полжении, либо сбросит и начнёт заново), <strong>repeatCount="число/indefinite - бесконечно"</strong>. Чтобы создать многоугольник используется тег <strong>polygon.../polygon</strong>, затем точки <strong>points="100 100, 200 200,300 0"</strong> и стиль <strong>style="fill:green;stroke:black"</strong> и на выходе видим такой треугольник:
+        <svg width="1000" height="300" align="left">
+            <polygon points="100 100, 200 200, 300 0" style="fill:green;stroke:black">
+            </polygon>
+        </svg><br />
+        <strong>Ничего сложного!</strong>
+    </nav>
+    <footer>
+       <br/><br/> 
+        <img src="iconVK.jpg" height="75" weight="75"  alt="" />
+        <img src="iconG+.png" height="75" weight="75" alt="" />
+        <img src="iconSteam.png" height="75" weight="75"  alt="" /><br />
+        ___<a href="https://vk.com/konstantinbc" target="_blank">VK</a>_____<a href="https://plus.google.com/u/0/110124493566351390001" target="_blank">Goodle+</a>____<a href="http://steamcommunity.com/id/CHANNELKBC" target="_blank">Steam</a>___
+    </footer>
+</body>
+</html>

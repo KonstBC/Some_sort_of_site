@@ -1,0 +1,49 @@
+@charset "windows-1251";
+body{
+	color:black;
+	background-color:white;
+	font-family:"Times New Roman",sans-serif; 
+}
+p.first{
+padding: 1px;    
+border: 3px solid green;
+color:black;
+font-family:"Lucida Console","Times New Roman",sans-serif;
+border-style: dashed;
+text-align: center;
+}
+nav.second{
+padding: 4px;    
+border: 10px solid lime;
+color:black;
+background-color:lime;
+font-family:"Times New Roman",sans-serif;
+border-style:outset;
+text-align: left;
+}
+article.third{
+text-align:left;
+padding: 1px;    
+border: 3px solid blue;
+color:black;
+font-family:"Lucida Console","Times New Roman",Arial,sans-serif;
+}
+nav.fourth{
+text-align:left;
+padding: 1px;    
+border: 3px solid blue;
+color:black;
+font-family:"Lucida Console","Times New Roman",Arial,sans-serif;
+}
+div{
+padding: 10px;    
+border: 3px solid blue;
+color:black;
+font-family:"Lucida Console","Times New Roman",Arial,sans-serif;
+}
+p{
+padding: 1px;    
+border: 2px solid green;
+color:black;
+font-family:"Lucida Console","Times New Roman",sans-serif;
+}

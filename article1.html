@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" type="text/css"/>
+    <meta charset="utf-8" />
+    <title>KOSTPedia - Статья первая</title>
+</head>
+<body>
+    <header style="color:darkgreen">
+        <h1 align="center">
+            KOSTPedia
+        </h1>
+            <p class="first">
+                   <b>
+                Статья первая - "Воспроизведение аудио/видео фрагмента"
+                    </b> 
+            </p>
+    </header>
+    <article style="color:darkgreen" class="third">
+        <section >
+            <p><ul >
+                <li><a href="article1.html">
+                    Статья первая - "Воспроизведение аудио/видео фрагмента"
+                </a>
+                </li>
+                   <li>
+                       <a href="article2.html">
+                           Статья вторая - "Заполнение и работа с формами"
+                       </a>
+                   </li>
+                   <li>
+                       <a href="article3.html">
+                           Статья третья - "Таблица, шкала прогресса"
+                       </a>
+                   </li>
+                   <li>
+                       <a href="article4.html">
+                           Статья четвёртая - "SVG графика"
+                       </a>
+                   </li>
+                </ul>
+            </p>
+        </section>
+    </article>
+    <nav class="fourth">
+	    <p></p>
+      	<ul>
+        <li><a href="home.html"><span style="color:darkblue"><i>Главная</i></span> </a></li>
+        <li><a href="about.html"><span style="color:darkblue"><i>О сайте</i> </span> </a></li>
+        </ul>
+		<p></p>
+    </nav>
+    <nav class="second">
+        И так, что же из себя представляеет воспроизведение видео/аудио в <strong>HTML 5</strong>? Чтобы привязать видео/аудио к странице, используется путь к файлу с соответствующим форматом <strong>src="путь"</strong> не забывая указать его <strong>type="video/формат"</strong> (т.е .mp4, .mp3, .wav и т.д). Путь, формат и т.д прописываются в теге <strong>source.../source</strong>. Аналогично настраивется и аудио. Используя теги <strong>video.../video</strong> и <strong>audio.../audio</strong> прописываем параметры плеера(автовоспроизвидение, управление, зацикливание с помощью соответствующих атрибутов) и ссылку на файл.<br /><span style="color:darkblue">Пример видео:</span><br />
+        <video width="640" height="360" controls>
+            <source src="LAYS.mp4" type="video/mp4"/>
+        </video>
+        <br /><span style="color:darkblue">Пример аудио:</span><br />
+        <span style="color:darkgreen">MGS V - "The Man Who Sold The World"</span><br />
+        <audio controls>
+            <source src="MGSV.mp3" type="audio/mp3" />
+        </audio>
+        <br />
+        <span style="color:darkgreen">Mick Gordon - "Argent Combat"</span><br />
+        <audio controls>
+            <source src="MICK_GORDON.mp3" type="audio/mp3" />
+        </audio>
+        <br/><br />
+        Стоит добавить, что браузер (если вы это ему укажите) способен выбрать формат для файла т.е используя два атрибута <strong>type</strong>. К примеру, у вас есть видео файл и вы не знаете, какого он формата. В таком случае, прописываем в теге <strong>source</strong> два атрибута <strong>type</strong>: <strong>type="video/mp4" type="video/ogg"</strong>, браузер автоматически определит тип файла и воспроизведёт его.<br /><strong>Проще простого!</strong>
+    </nav>
+    <footer>
+       <br/><br/> 
+        <img src="iconVK.jpg" height="75" weight="75"  alt="" />
+        <img src="iconG+.png" height="75" weight="75" alt="" />
+        <img src="iconSteam.png" height="75" weight="75"  alt="" /><br />
+        ___<a href="https://vk.com/konstantinbc" target="_blank">VK</a>_____<a href="https://plus.google.com/u/0/110124493566351390001" target="_blank">Goodle+</a>____<a href="http://steamcommunity.com/id/CHANNELKBC" target="_blank">Steam</a>___
+    </footer>
+</body>
+</html>
